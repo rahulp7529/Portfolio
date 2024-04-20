@@ -1,0 +1,188 @@
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1100;
+    opacity: 1;
+  }
+  
+  .preloader .preloader__wrap {
+    text-align: left;
+    max-width: 140px;
+  }
+  
+  .preloader .preloader__logo {
+    width: 100%;
+    max-width: 140px;
+    animation: blur-logo 1s ease-in-out;
+  }
+  @keyframes blur-logo {
+    0% {
+      filter: blur(30px);
+      opacity: 0;
+      transform: scale(1.5);
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .preloader .loader-73 {
+    width: 0;
+    height: 1.8px;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5019607843);
+    animation: animFw 3s linear infinite;
+  }
+  @keyframes animFw {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .loaded .preloader {
+    transform: translateY(-100%);
+    transition: all 0.5s ease-out;
+  }
+  
+.gallary {
+    padding: 40px 0 100px 0;
+}
+@media screen and (max-width: 1199px) {
+    .gallary {
+        padding: 40px 0 80px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .gallary {
+        padding: 40px 0 60px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .gallary {
+        padding: 40px 0 40px 0;
+    }
+}
+.gallary .after {
+    line-height: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.gallary .after::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 208, 73, 0.18)), color-stop(46.59%, rgba(20, 20, 20, 0)), to(rgba(252, 208, 73, 0.35)));
+    background: linear-gradient(180deg, rgba(252, 208, 73, 0.18) 0%, rgba(20, 20, 20, 0) 46.59%, rgba(252, 208, 73, 0.35) 100%);
+    border: 1px solid #fcd049;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.gallary .after:hover::after {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.gallary .after:hover .after-text-block h2 {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.gallary .after-text-block h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 18px;
+    font-family: "Satoshi-Variable", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.gallary-slider {
+    position: relative;
+    padding: 100px 0;
+}
+@media screen and (max-width: 1199px) {
+    .gallary-slider {
+        padding: 80px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .gallary-slider {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .gallary-slider {
+        padding: 40px 0;
+    }
+}
+.gallary-slider .after_text {
+    left: 50px;
+    text-align: left;
+    top: -20px;
+}
+@media screen and (max-width: 1199px) {
+    .gallary-slider .after_text {
+        font-size: 110px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .gallary-slider .after_text {
+        font-size: 80px;
+        line-height: 1.2;
+        text-align: center;
+        left: 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .gallary-slider .heading {
+        margin-top: 0;
+    }
+}
+.gallary-slider .heading h2 {
+    margin-bottom: 40px;
+}
+.gallary-slider .gallary-block {
+    max-width: 1600px;
+    margin: auto;
+}
+.gallary-slider .gallary-block .swiper-slide {
+    line-height: 0;
+}
+#animated-thumbnails-gallery:hover .after:not(:hover) {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+#animated-thumbnails-gallery .after:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+}
+#animated-thumbnails-gallery .after img {
+    -webkit-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+}
