@@ -1,0 +1,84 @@
+.hero-banner{
+    background-image: url(../images/hero-bg.svg), $gradient-color ;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    padding: 180px 0 0 0;
+    @media(max-width: 991px){
+        background-image: unset;
+        background: $gradient-color ;
+    }
+    @media(max-width: 767px){
+        padding: 120px 0 0 0;
+    }
+    .image-wrapper{
+        line-height: 0;
+        margin-bottom: 20px;
+        img{
+            @media(max-width: 991px){
+                max-width: 650px;
+            }
+            @media(max-width: 575px){
+                max-width: 450px;
+            }
+        }
+    }
+    .content-wrapper{
+        margin-bottom: 45px;
+        text-align: center;
+        @media(max-width: 991px){
+        //    text-align: center;
+           margin-bottom: 30px;
+        }
+        h1{ 
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 72px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            @media(max-width: 1399px){
+                font-size: 41px;
+                line-height: 52px;
+            }
+            @media(max-width: 767px){
+                font-size: 36px;
+                line-height: 48px;
+            }
+            @media(max-width: 575px){
+                font-size: 30px;
+                line-height: 42px;
+                margin-bottom: 10px;
+            }
+            @media(max-width: 480px){
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
+        p{
+            color: $white-color;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 540px;
+            margin: 0 auto 30px auto;
+            // @media(max-width: 991px){
+            //     margin: 0 auto 30px auto;
+            // }
+            @media(max-width: 575px){
+                margin-bottom: 30px;
+            }
+        }
+        .btn-wrapper{
+            display: flex;
+            justify-content: center;
+            // @media(max-width: 991px){
+            //    justify-content: center;
+            // }
+            img{
+                margin-right: 10px;
+                margin: -30px 10px 0 10px;
+                @media(max-width: 991px){
+                    display: none;
+                }
+            }
+        }
+    }
+}

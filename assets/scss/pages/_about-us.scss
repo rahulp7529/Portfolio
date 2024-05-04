@@ -1,0 +1,28 @@
+.about-us{
+    .content{
+        @media(max-width: 991px) {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .heading{
+            text-align: left;
+            @media(max-width: 991px) {
+                text-align: center;
+            }
+            p{
+                max-width: 430px;
+                @media(max-width: 991px) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .image{
+        img{
+            @media(max-width: 991px) {
+                max-width: 450px;
+                width: 100%;
+            }
+        }
+    }
+}

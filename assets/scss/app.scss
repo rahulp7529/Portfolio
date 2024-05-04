@@ -1,0 +1,31 @@
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
+@import '../scss/base/base';
+@import '../scss/base/buttons';
+@import '../scss/base/default';
+@import '../scss/components/breadcrumb';
+@import '../scss/components/header';
+@import '../scss/components/footer';
+@import '../scss/components/hero-banner';
+@import '../scss/pages/home';
+// @import '../scss/pages/policy';
+@import '../scss/pages/about-us';
+@import '../scss/pages/form-pages';
+// @import '../scss/pages/support';
+.service-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item > a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    @media screen and (max-width:1199px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width:575px) {
+        font-size: 18px;
+    }
+}
